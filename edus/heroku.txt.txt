@@ -1,0 +1,35 @@
+mongodb+srv://mukesh123:<password>@cluster0-mz8ul.mongodb.net/<dbname>?retryWrites=true&w=majority
+email: mukeshcs94@gmail.com
+password: shareideas@123
+
+
+Heroku: edurights@123
+
+https://git.heroku.com/eduright.git
+
+
+https://edurights.herokuapp.com/ 
+
+PART 1 : "How does git know where to push to?"
+
+Before executing the above mentioned command:
+
+$ git push heroku master
+
+
+1. A local Git repository:
+    $ git init
+    $ git add .
+    $ git commit -m "my first commit"
+   
+2. Have sign-up(ed) for Heroku and logged-in via command-line:
+$ heroku login -i
+
+$ git push heroku master 
+
+Email: mukeshcs94@gmail.com
+Password: edurights@12345
+
+
+
+
