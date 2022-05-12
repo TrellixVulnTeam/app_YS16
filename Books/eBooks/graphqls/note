@@ -1,0 +1,36 @@
+Bearer
+
+http://localhost:8000/graphql
+in frontend - npm start
+
+suggesion - ctrl + space
+2.Query{
+  events
+}
+
+- mutation{
+  createEvent(name:"Playing")
+}
+
+3.mutation{
+  createEvent(eventInput:{title:"A test",description:"To do",price:1.2,date:"2018-12-06T09:26:30.645Z"}){
+    title
+    description
+    price
+    date
+  }
+}
+
+- query{
+  events{
+    _id
+    date
+  }
+}
+
+5. mutation{
+  createEvent(eventInput:{title:"A Programmer",description:"ok",price:0.4,date:"2019-03-30T18:15:24.817Z"}){
+    title
+    description
+  }
+}

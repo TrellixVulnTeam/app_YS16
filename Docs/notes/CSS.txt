@@ -1,0 +1,535 @@
+1.Text-Transform Values
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;   How Are You
+
+2.align-content: center;
+
+align-items: center;
+
+align-self: center;
+// align-self property overrides the container's align-items property.
+
+all: initial;
+//Change all the properties applied to the element or the element's parent to their initial value:
+
+animation: mymove 5s infinite;
+//Make an element go from 0px to 200px from the left. The animation should take 5 seconds and it should go on forever (infinitely).
+
+animation-delay: 2s;
+//Start the animation after 2 seconds:
+
+animation-direction: alternate;
+//Play the animation forwards first, then backwards:
+
+animation-duration: 3s;
+//Specify that the animation should complete one cycle in 3 seconds:
+
+animation-fill-mode: forwards;
+//animation-fill-mode property specifies a style for the element when the animation is not playing
+
+animation-iteration-count: 2;
+//Play the animation two times:
+
+animation-name: mymove;
+//Specify a name for the @keyframes animation:
+
+animation-play-state: paused;
+//Pause an animation:
+
+animation-timing-function: linear;
+//Play an animation with the same speed from beginning to end:
+
+background: lightblue url("img_tree.gif") no-repeat fixed center; 
+
+background-clip: padding-box;
+
+body {background-color: coral;}
+
+background-image: url("paper.gif");
+
+background-repeat: no-repeat;
+    background-origin: content-box;
+
+background-attachment: fixed;
+    background-position: center;
+
+background-repeat: repeat-y;
+
+background-size: auto;
+
+border: 5px solid red;
+
+ border-bottom: 5px solid red;
+
+div {border-bottom-color: coral;}
+
+border-bottom-left-radius: 25px;
+
+div {border-bottom-style: dotted;}
+
+div {border-bottom-width: thin;}
+
+border-collapse: collapse;
+border-collapse: separate;
+
+ border-image: url(border.png) 30 round;
+
+border-image-source: url(border.png);
+    border-image-outset: 10px;
+
+border-image-slice: 30;
+
+border-radius: 25px;
+
+border-spacing: 10px 50px;
+
+div {border-style: dotted;}
+
+border-top: 5px solid red;
+
+div {border-top-color: coral;}
+
+border-top-left-radius: 25px;
+
+div {border-top-style: dotted;}
+
+div {border-top-width: thin;}
+   div {border-width: thin;}
+
+box-shadow: 10px 10px 5px #888888;
+
+box-sizing: border-box;
+
+caption-side: bottom;
+
+caret-color: red;
+ //Specify the color of the caret in an input element:
+
+clip: rect(0px,60px,200px,0px);
+
+column-count: 3;
+//Divide the text in the <div> element into three columns:
+
+column-fill: auto;
+//Specify how to fill columns:
+
+column-gap: 40px;
+
+column-rule: 4px outset #ff00ff;
+//Specify the width, style and color of the rule between columns:
+
+column-rule-color: #ff0000;
+column-rule-style: dotted;
+column-rule-width: 1px;
+
+column-span: all;
+//Let the <h2> element span across all columns:
+
+column-width: 100px;
+//Specify a suggested, optimal width for the columns:
+
+content: " (" attr(href) ")";
+//inserts the URL in parenthesis after each link:
+
+counter-reset: section;
+
+cursor: wait;
+cursor: help;
+cursor: crosshair;
+
+ direction: rtl;
+
+display: inline;
+
+empty-cells: hide;
+
+filter: grayscale(100%);
+//Change the color of all images to black and white (100% gray):
+
+flex: 1;
+//all the flexible items be the same length, regardless of its content:
+
+div:nth-of-type(2) {
+   flex-basis: 80px;
+}
+//Set the initial length of the second flex-item to 80 pixels:
+
+display: flex;
+    flex-direction: row-reverse; 
+//Set the direction of the flexible items inside the <div> element in reverse order:
+
+display: flex;
+flex-flow: row-reverse wrap;
+//Make the flexible items display in reverse order, and wrap if necessary:
+
+div:nth-of-type(1) {flex-grow: 1;}
+div:nth-of-type(2) {flex-grow: 3;}
+//second flex-item grow three times wider than the rest:
+
+div:nth-of-type(2) {
+    flex-shrink: 3;
+}
+//second flex-item shrink three times more than the rest:
+
+float: right;
+//image float to the right:
+
+font: 15px arial, sans-serif;
+
+p {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+font-kerning: normal;
+
+font-size: 250%;
+
+ font-size-adjust: 0.58;
+
+font-stretch: expanded;
+//Make the text in all <div> elements wider:
+
+ font-variant: small-caps;
+//Set a paragraph to a small-caps font:
+
+font-weight: bold;
+
+ display: grid;
+  grid: 150px / auto auto auto;
+
+grid-area: 2 / 1 / span 2 / span 3;
+
+display: grid;
+  grid-auto-columns: 50px;
+
+display: grid;
+  grid-auto-flow: column;
+
+display: grid;
+  grid-auto-rows: 150px;
+
+grid-column: 1 / span 2;
+//Make "item1" start on column 1 and span 2 columns:
+
+grid-column-end: span 3;
+//Make "item1" span 3 columns:
+
+grid-column-gap: 50px;
+
+grid-column-start: 2;
+
+grid-gap: 50px;
+
+grid-row: 1 / span 2;
+
+grid-row-end: span 3;
+
+ grid-row-gap: 50px;
+
+ grid-row-start: 2;
+
+ display: grid;
+  grid-template: 150px / auto auto auto;
+//Make a three columns grid layout where the first row is 150px high:
+
+hanging-punctuation: first;
+//Place a punctuation mark (if any) outside the start edge of the first line in the <p> element:
+
+justify-content: space-around;
+//Make some space around the items of the flexible <div> element:
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+//Make an element move gradually 200px down:
+
+letter-spacing: 2px;
+
+ line-height: 90%;
+
+list-style: square url("sqpurple.gif");
+
+list-style-image: url('sqpurple.gif');
+
+list-style-position: inside;
+
+ul.circle {list-style-type: circle;}
+ul.square {list-style-type: square;}
+ol.upper-roman {list-style-type: upper-roman;}
+ol.lower-alpha {list-style-type: lower-alpha;}
+
+margin: 2cm 4cm 3cm 4cm;
+
+margin-bottom: 2cm;
+
+max-height: 50px;
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+//Change the background-color if the viewport is 480 pixels wide or wider
+
+ min-height: 100px;
+
+object-fit: cover;
+
+ opacity: 0.5;
+
+div#myRedDIV {order: 2;}
+
+ outline: #00FF00 dotted thick;
+
+ outline-style: dotted;
+    outline-color: #00ff00;
+
+outline-offset: 15px;
+
+overflow: scroll;
+
+overflow-x: hidden;
+
+padding: 2cm 4cm 3cm 4cm;
+
+padding-bottom: 2cm;
+
+@media print {
+    h1 {page-break-before: always;}
+}
+//Always insert a page break before each <h1> element (when printing):
+
+ perspective: 500px;
+//Set the perspective from where an element is viewed:
+
+perspective: 150px;
+    perspective-origin: 10% 10%;
+//Set a 3D element's base placement:
+
+position: absolute;
+
+quotes: "\00ab" "\00bb";
+//Specify the quotation marks for quotations:
+
+resize: both;
+    overflow: auto;
+
+pre {tab-size: 16;}
+
+table-layout: fixed;
+
+text-align-last: right;
+
+vertical-align: text-top;
+
+visibility: hidden;
+
+white-space: nowrap;
+//Specify that the text in <p> elements will never wrap:
+
+word-break: break-all;
+//Break words between any two letters:
+
+word-wrap: break-word;
+//Allow long words to be able to break and wrap onto the next line:
+
+column-count:3;
+column-rule:2px solid red;
+column-gap:40px;
+text-align:justify;
+
+border-image:url(a.jpg) 30 30 round;
+background:url(a.jpg);
+background-size:300px 410px;
+background-repeat:no-repeat;
+background-position:left;
+background-origin:content-box;
+
+font-family: 'Ropa Sans', sans-serif;
+font-size: 14px;
+color: green;
+line-height: 4.3em;
+
+text-transform: uppercase;
+text-shadow: 20px 20px 10px #6AAFCF;
+box-shadow: 15px 15px 5px #888245;
+
+#animated_div{
+ text-align:center;
+width:60px;
+ height:40px;
+ position:relative;
+ animation:animated_div 5s infinite;
+ border-radius:5px;
+ }
+ @keyframes animated_div{
+ 0% {left:0px;}
+ 20% {left:50px; background-color: green;}
+ }
+<span style="font-size:10px;">Tutorial</span>
+
+.gradient{
+	background-image: linear-gradient(180deg, #FFF 0%, #000 100%);
+}
+background-image: radial-gradient(circle farthest-corner at center,
+#FFF, #000);
+.repeat_linear_1 {
+background-image:
+repeating-linear-gradient(to right,
+rgba(0,0,0,0.5) 10%,
+rgba(0,0,0,0.1) 30%);
+}
+
+resize:horizontal;
+overflow:auto;
+
+
+Descendant combinator (E F)  => You should definitely be familiar with this one.
+The descendant selector targets any element F
+that is a descendant (child, grandchild, great
+grandchild, and so on) of an element E. For example,
+ol li targets li elements that are inside
+ordered lists. This would include li elements in
+a ul that’s nested in an ol, which might not be
+what you want.
+
+Child combinator (E > F)    =>This selector matches any element F that is a direct
+child of element E—any further nested elements
+will be ignored. Continuing the example,
+ol > li would only target li elements directly
+inside the ol, and would omit those nested inside
+a ul.
+Adjacent sibling, or next sibling
+selector (E + F)   =>
+This will match any element F that shares the
+same parent as E, and comes directly after E in the
+markup. For example, li + li will target all li
+elements except the first li in a given container.
+General sibling or following
+sibling selector (E ~ F)  =>
+This one’s a little trickier. It will match any element
+F that shares the same parent as any E and
+comes after it in the markup. So, h1 ~ h2 will
+match any h2 that follows an h1, as long as they match any h2 that follows an h1, as long as they
+both share the same direct parent—that is, as long
+as the h2 is not nested in any other element.
+
+
+Attribute Selectors
+CSS2 introduced several attribute selectors. These allow for matching elements
+based on their attributes. CSS3 expands upon those attribute selectors, allowing for
+some targeting based on pattern matching. CSS Selectors Level 4 adds a few more:
+E[attr] => Matches any element E that has the attribute attr regardless of
+the attribute’s value. We made use of this back in Chapter 4 to
+style required inputs; input:required works in the latest
+browsers, but input[required] has the same effect and works in
+IE7 and IE8 as well.
+E[attr=val] => Matches any element E that has the attribute attr with the exact
+value val. While not new, it’s helpful in targeting form input
+types; for instance, targeting checkboxes with input[type=checkbox].
+E[attr|=val] => Matches any element E whose attribute attr either has the value
+val or begins with val-. This is most commonly used for the lang
+attribute. For example, p[lang|="en"] would match any paragraph
+that has been defined as being in English whether it be UK
+or US English with &lt;p lang="en-uk"> or &lt;p lang="enus">.
+E[attr~=val]  => Matches any element E whose attribute attr has within its value
+the full word val, surrounded by whitespace. For example,
+.info[title~=more] => would match any element with the class
+info that had a title attribute containing the word “more,” such
+as “Click here for more information.”
+E[attr^=val] => Matches any element E whose attribute attr starts with the value
+val. In other words, the val matches the beginning of the attribute
+value.
+E[attr$=val] => Matches any element E whose attribute attr ends in val. In other
+words, the val matches the end of the attribute value.
+E[attr*=val] Matches any element E whose attribute attr matches val anywhere
+within the attribute. It is similar to E[attr~=val], except E[attr~=val] Matches any element E whose attribute attr has within its value
+the full word val, surrounded by whitespace. For example,
+.info[title~=more] would match any element with the class
+info that had a title attribute containing the word “more,” such
+as “Click here for more information.”
+E[attr^=val] Matches any element E whose attribute attr starts with the value
+val. In other words, the val matches the beginning of the attribute
+value.
+E[attr$=val] Matches any element E whose attribute attr ends in val. In other
+words, the val matches the end of the attribute value.
+E[attr*=val] Matches any element E whose attribute attr matches val anywhere
+within the attribute. It is similar to E[attr~=val], except
+
+The following pseudo-classes match elements based on attributes, user interaction,
+and form control state:
+:enabled => A user interface element that’s enabled, which is basically any
+form control that supports the disabled attribute but doesn’t
+currently have it applied.
+:disabled => Conversely, a user interface element that is disabled: any form
+control that supports the disabled attribute and currently has
+it applied.
+:checked => For radio buttons or checkboxes that are selected or ticked.
+:indeterminate => For form elements that are neither checked nor unchecked. For
+example, if you tick a check all checkbox to select a group of
+checkboxes, then deselect some but not all of the checkboxes
+in the group, the check all could be set to the indeterminate
+state (with JavaScript) to indicate that it’s neither checked nor
+unchecked.
+:target => This selector singles out the element that is the target of the
+currently active intrapage anchor. That sounds more complicated
+than it is: you already know that you can have links to
+anchors within a page by using the # character with the ID of the target. For example, you may have <a href="#content">
+Skip to content</a> link in your page that, when
+clicked, will jump to the element with an ID of content.This changes the URL in the address bar to thispage.html#content—
+and the :target selector now matches the element in
+the document that has content as its ID. It's as if you had included,
+temporarily, the selector #content.We say temporarily
+because as soon as the user clicks on a different anchor, :target
+will match the new target.
+:default => Applies to one or more UI elements that are the default among
+a set of similar elements. For example, the one radio button in
+a group of same-named radio buttons that was checked on page
+load will continue to match :default after another radio button
+in the same-named group is selected. Similarly, checkboxes
+that are selected on page load will continue to match :default
+after they are unchecked.
+:valid => Applies to elements that are valid, based on the type, pattern,
+or other input attributes (as we discussed in Chapter 4).
+:invalid => Applies to empty required elements and elements failing to
+match the requirements defined by the type or pattern attributes.
+:in-range => Applies to elements with range limitations where the value is
+within those limitations. This applies, for example, to
+date/time, number, and range input types with min and max
+attributes. When the value is null, it is :in-range.
+:out-of-range => The opposite of :in-range: elements whose value is outside
+the limitations of their range. Missing values are not out of
+range, as they are empty.
+:required => Applies to form controls that have the required attribute set.
+:optional => Applies to all form controls that do not have the required attribute.
+:read-only => Applies to elements whose contents are unable to be altered
+by the user. This is most elements other than those with the
+contenteditable attribute set and form fields.
+read-write => Applies to elements whose contents are user-alterable, such as
+contenteditable components and writable input fields.
+
+CSS3 Gradients => and Multiple Backgrounds
+closest-side The gradient’s shape meets the side of the box closest to its
+center (for circles), or meets both the vertical and horizontal
+sides closest to the center (for ellipses). It creates the smallest
+gradient of the four key terms.
+closest-corner => The gradient’s shape is sized so that it meets exactly the
+closest corner of the box from its center.
+farthest-side => Similar to closest-side, except that the shape is sized to
+meet the side of the box farthest from its center—or the farthest
+vertical and horizontal sides in the case of ellipses.
+farthest-corner The gradient’s shape is sized so that it meets exactly the
+farthest corner of the box from its center. Creates the largest
+gradient of the four key terms.
+lengths => For the size we could have used a length unit instead of one
+of the four key terms mentioned, with percentage values being
+supported for elliptical declarations, but not for circles. If you
+declare lengths, the circle gradient only supports one value;
+for ellipses, the length unit requires both the horizontal and
+vertical radii be declared, with the width coming before the
+height.
+
+
+

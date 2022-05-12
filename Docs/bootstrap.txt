@@ -1,0 +1,545 @@
+1.Grid Classes
+The Bootstrap 4 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+The classes above can be combined to create more dynamic and flexible layouts.
+
+Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+ </head>
+<body>
+
+<div class="container-fluid">
+   <div class="row">
+    <div class="col" style="background-color:lavender;">.col</div>
+    <div class="col" style="background-color:orange;">.col</div>
+    <div class="col" style="background-color:lavender;">.col</div>
+  </div>
+</div>
+
+
+2.Tables
+    .table class adds basic styling to a table:
+    .table-striped class adds zebra-stripes to a table:
+    .table-bordered class adds borders on all sides of the table and cells:
+    .table-hover class adds a hover effect (grey background color) on table rows:
+    .table-dark class adds a black background to the table:
+    .table-dark and .table-striped to create a dark, striped table:
+
+
+3.Class	Description
+    .table-primary	Blue: Indicates an important action
+    .table-success	Green: Indicates a successful or positive action
+    .table-danger	Red: Indicates a dangerous or potentially negative action
+    .table-info	Light blue: Indicates a neutral informative change or action
+    .table-warning	Orange: Indicates a warning that might need attention
+    .table-active	Grey: Applies the hover color to the table row or table cell
+    .table-secondary	Grey: Indicates a slightly less important action
+    .table-light	Light grey table or table row background
+    .table-dark	Dark grey table or table row background
+
+
+<table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+5.Images:
+    .rounded class adds rounded corners to an image:
+    .rounded-circle class shapes the image to a circle:
+    .img-thumbnail class shapes the image to a thumbnail (bordered):
+
+6.Jumbotron:
+A jumbotron indicates a big grey box for calling extra attention to some special content or information.
+
+If you want a full-width jumbotron without rounded borders, add the .jumbotron-fluid class and a .container or 
+.container-fluid inside of it:
+
+7.Alerts
+Alerts are created with the .alert class, followed by one of the contextual classes .alert-success, .alert-info, 
+.alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark:
+
+8.Buttons
+btn,btn btn-primary,btn btn-secondary,btn btn-success,btn btn-info,btn btn-warning
+<button type="button" class="btn btn-link">Link</button>
+
+button sizes: btn btn-primary btn-lg,btn btn-primary,btn btn-primary btn-sm
+
+Add class .btn-block to create a block level button that spans the entire width of the parent element.
+
+ .active makes a button appear pressed, and the disabled attribute makes a button unclickable. Note that 
+ <a> elements do not support the disabled attribute and must therefore use the .disabled class to make it visually 
+ appear disabled.
+
+9.Button Groups:
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+
+class .btn-group-vertical to create a vertical button group:
+
+10.Badges
+Badges are used to add additional information to any content. Use the .badge class together with a contextual class 
+(like .badge-secondary) within <span> elements to create rectangular badges. Note that badges scale to match the 
+size of the parent element
+badge badge-primary,badge badge-secondary,badge badge-success,
+<span class="badge badge-info">Info</span>
+
+.badge-pill class to make the badges more round:
+
+11.Progress Bars
+To create a default progress bar, add a .progress class to a container element and the progress-bar class to its 
+child element.
+    <div class="progress">
+      <div class="progress-bar" style="width:70%"></div>
+    </div>
+
+12.Pagination
+To create a basic pagination, add the .pagination class to an <ul> element. Then add the .page-item to each 
+<li> element and a .page-link class to each link inside <li>:
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+
+        .active class is used to "hightlight" the current page:
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+
+13.List Groups
+To create a basic list group, use an <ul> element with class .list-group, and <li> elements with class 
+.list-group-item:
+<ul class="list-group">
+  <li class="list-group-item">First item</li>
+
+The classes for coloring list-items are: .list-group-item-success, list-group-item-secondary, list-group-item-info, 
+list-group-item-warning, .list-group-item-danger, list-group-item-dark and list-group-item-light,:
+
+14.Cards
+A basic card is created with the .card class, and content inside the card has a .card-body class:
+
+<div class="card">
+  <div class="card-body">Basic card</div>
+</div>
+
+ .card-header class adds a heading to the card and the .card-footer class adds a footer to the card:
+
+To add a background color the card, use contextual classes (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light
+
+Use .card-title to add card titles to any heading element. The .card-text class is used to remove bottom margins for a <p> element if it is the last child in the card-block. The .card-link class adds a blue color to any link, and a hover effect.
+
+Add .card-image-top or .card-image-bottom to an <img> to place it at the top or at the bottom inside the card. Note that we have added the image outside of the card-block to span the entire width:
+
+Turn an image into a card background and use .card-img-overlay to add text on top of the image:
+
+15.Dropdowns
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Link 1</a>
+    <a class="dropdown-item" href="#">Link 2</a>
+    <a class="dropdown-item" href="#">Link 3</a>
+  </div>
+The .dropdown class indicates a dropdown menu.
+
+To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and the data-toggle="dropdown" attribute.
+
+Add the .dropdown-menu class to a <div> element to actually build the dropdown menu. Then add the .dropdown-item class to each element (links or buttons) inside the dropdown menu.
+
+ .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border:
+
+ .dropdown-header class is used to add headers inside the dropdown menu:
+
+To disable an item in the dropdown menu, use the .disabled class 
+
+To right-align the dropdown, add the .dropdown-menu-right class to the element with .dropdown-menu:
+
+If you want the dropdown menu to expand upwards instead of downwards, change the <div> element with class="dropdown" to "dropup":
+
+16.Collapse
+Collapsibles are useful when you want to hide and show large amount of content:
+<a href="#demo" data-toggle="collapse">Collapsible</a>
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
+
+17.Forms
+Bootstrap provides two types of form layouts:
+
+Stacked (full-width) form
+Inline form
+
+<form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+18.Form Inputs
+Bootstrap supports the following form controls:
+
+input
+textarea
+checkbox
+radio
+select
+The following example contains a textarea:
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+Checkboxes
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="">Option 1
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="">Option 2
+  </label>
+</div>
+
+.form-check-inline class if you want the checkboxes to appear on the same line:
+
+Radio Buttons
+<div class="radio">
+  <label><input type="radio" name="optradio">Option 1</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio">Option 2</label>
+</div>
+<div class="radio disabled">
+  <label><input type="radio" name="optradio" disabled>Option 3</label>
+</div>
+
+.radio-inline class if you want the radio buttons to appear on the same line:
+
+19.Carousel
+The Carousel is a slideshow for cycling through elements.
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+20.Modal
+The Modal component is a dialog box/popup window that is displayed on top of the current page:
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+21.Tooltip
+The Tooltip component is small pop-up box that appears when the user moves the mouse pointer over an element:
+
+ Tooltips must be initialized with jQuery: select the specified element and call the tooltip() method.
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
+
+
+22.Popover
+<div class="container">
+  <h3>Popover Example</h3>
+  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
+
+23.Scrollspy (Advanced)
+Scrollspy is used to automatically update links in a navigation list based on scroll position.
+<!-- The scrollable area -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+...
+  <ul class="navbar-nav">
+    <li><a href="#section1">Section 1</a></li>
+    ...
+</nav>
+
+<!-- Section 1 -->
+<div id="section1">
+  <h1>Section 1</h1>
+  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+</div>
+...
+
+</body>
+
+24.Utilities
+Use the border classes to add or remove borders from an element:
+
+<span class="border"></span>
+<span class="border border-0"></span>
+<span class="border border-top-0"></span>
+<span class="border border-right-0"></span>
+<span class="border border-bottom-0"></span>
+<span class="border border-left-0"></span>
+
+25. Grid System
+If you do not want to use all 12 column individually, you can group the columns together to create wider columns:
+
+The Bootstrap 4 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+
+Some Bootstrap 4 grid system rules:
+
+Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding
+Use rows to create horizontal groups of columns
+Content should be placed within columns, and only columns may be immediate children of rows
+Predefined classes like .row and .col-sm-4 are available for quickly making grid layouts
+Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows
+Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three .col-sm-4
+Column widths are in percentage, so they are always fluid and sized relative to their parent element
+The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats. One big advantage with flexbox is that grid columns without a specified width will automatically layout as equal width columns. Example: Three elements with .col-sm will each automatically be 33.33% wide from the small breakpoint and up.
+
+<!-- Control the column width, and how they should appear on different devices -->
+<div class="row">
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+</div>
+
+<!-- Or let Bootstrap automatically handle the layout -->
+<div class="row">
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+
+create a row (<div class="row">). Then, add the desired number of columns (tags with appropriate .col-*-* classes). The first star (*) represents the responsiveness: sm, md, lg or xl, while the second star represents a number, which should always add up to 12 for each row.
+
+Second example: instead of adding a number to each col, let bootstrap handle the layout, to create equal width columns: two "col" elements = 50% width to each col. three cols = 33.33% width to each col. four cols = 25% width, etc. You can also use .col-sm|md|lg|xl to make the columns responsive.
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+class="rounded"class="rounded-circle"class="img-thumbnail" 
+
+Alert Links =>alert alert-success,Info,Warning,Danger,Primary,Secondary,Dark,Light
+<span class="badge badge-primary">Primary</span>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-primary">Apple</button>
+
+<div class="card" style="width:400px">
+    <img class="" src="a.jpg" style="width:100%">
+     <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example </p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+
+ <input type="checkbox" class="form-check-input" value="">Option
+
+<div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum </div>
+
+<p class="text-success">This text indicates success.</p>
+<p class="bg-danger text-white">This text represents danger.</p>
+
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+      <div class="dropdown-divider"></div>
+
+<div class="container-fluid">
+  <h2>Three Columns</h2>
+  <div class="row">
+    <div class="col-4 bg-success">col-4</div>
+    <div class="col-4 bg-warning">col-4</div>
+    <div class="col-4 bg-success">col-4</div>
+
+<div class="container-fluid">
+    <div class="row">
+     <div class="col-sm-6" style="background-color:orange;">50%</div>
+     <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+
+ <h2>Aligning images</h2>
+  <img src="a.jpg" class="float-left" width="304" height="236"> 
+  <img src="a.jpg" class="float-right" width="304" height="236"> 
+</div>
+
+ <li class="list-group-item active">Active item</li>
+
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+
+<li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+
+<a href="#" data-toggle="popover" data-content="Some content inside the popover">Toggle popover</a>
+
+<div class="progress">
+    <div class="progress-bar" style="width:70%">70%</div>
+
+<table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+
+<span class="border border-secondary"></span>
+
+
+
+

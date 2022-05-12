@@ -1,0 +1,56 @@
+,5cd00c225ab8c4cede54e671c97747ce
+
+https://samples.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10&appid=b1b15e88fa797225412429c1c50c122a1
+
+"homepage": "https://appbaseio-apps.github.io/airbeds",
+
+npm cache clean --force
+
+npm cache clean --force
+
+https://github.com/tifa2UP/Netly
+
+office email id=mukesh.singh@alphavarna.in
+
+www.aPlayersServicesDrive.com
+As@8802442
+url-https://aplayersservicesdrive.wordpress.com/
+
+github:https://github.com/manavgupta08/codeshare
+
+cross browser testing
+  https://app.crossbrowsertesting.com
+
+https://github.com/atlassian/react-beautiful-dnd
+
+https://burnsout.pipedrive.com/deal/1#
+
+@babel error=>
+   npm install --save-exact @babel/runtime@7.0.0-beta.55
+
+scla tutorials
+  https://www.youtube.com/watch?v=wvsxOedxQRo&list=PLS1QulWo1RIagob5D6kMIAvu7DQC5VTh3&index=7
+
+dnd card=>https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-react-beautiful-dnd
+
+https://en.wikipedia.org/wiki/Higher-order_function#JavaScript
+
+create new card in dnd
+https://www.smoothterminal.com/articles/adding-drag-and-drop-to-react
+https://github.com/kutlugsahin/smooth-dnd-demo
+
+npm install react-popper@0.9.1-alpha.1
+
+[contact-form-7 id="222" title="Contact form 1"]
+
+
+
+Password- PQMMH%XkxW#lSlH1O1W
+
+Domain-aplayersservices.com
+
+webhost-https://aplayers.000webhostapp.com/#content
+
+https://medium.com/@sunnykay/testing-react-applications-a-tutorial-setup-f87591b97295
+
+https://www.robinwieruch.de/react-testing-tutorial/

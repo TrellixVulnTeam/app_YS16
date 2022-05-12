@@ -1,0 +1,48 @@
+1.Cookies are simple, small files/data that are sent to client with a server request and stored on the client side.
+
+The following are the numerous uses of the HTTP Cookies −
+1.Session management
+2.Personalization(Recommendation systems)
+3.User tracking
+
+2.To use it, we will require it in our root.js file.
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
+3.The browser also sends back cookies every time it queries the server.
+
+4.You can add cookies that expire. To add a cookie that expires, just pass an object with property 'expire' set to 
+the time when you want it to expire. 
+res.cookie(name, 'value', {expire: 360000 + Date.now()}); 
+or
+res.cookie(name, 'value', {maxAge: 360000});
+
+5.To delete a cookie, use the clearCookie function. 
+app.get('/clear_cookie_foo', function(req, res){
+   res.clearCookie('foo');
+   res.send('cookie foo cleared');
+});
+
+6.Morgan =>
+Morgan is used for logging request details.It has lot of features. It is providing various formats and tokens to 
+write the log as the format we want. Morgan is working as what the Apache/Nginx  provide the logs format with 
+customization of log style.
+
+7.serve-favicon =>
+A favicon is a visual cue that client software, like browsers, use to identify a site.
+
+Why use this module?
+1.User agents request favicon.ico frequently and indiscriminately, so you may wish to exclude these requests from 
+your logs by using this middleware before your logger middleware.
+2.This module caches the icon in memory to improve performance by skipping disk access.
+3.This module provides an ETag based on the contents of the icon, rather than file system properties.
+4.This module will serve with the most compatible Content-Type.
+
+8.Body-Parser =>
+You need to use bodyParser() if you want the form data to be available in req.body.
+bodyParser has to parse the data differently depending on its type.
+
+bodyParser.json() returns a function, and when that function is passed into app.use, it acts just like any other 
+middleware. 
+
+

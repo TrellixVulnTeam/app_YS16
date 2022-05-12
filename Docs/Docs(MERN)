@@ -1,0 +1,129 @@
+﻿The version of V8 used by your Node installation can be viewed by typing:
+node –e "console.log(process.versions.v8)"
+ 
+NodeJs:
+
+1.EventEmitter
+2.Fork
+3.fs
+4.IPC
+5.nextTick
+6.setInterval
+7.setTimeout
+8.streams
+9.unref
+10.Server
+11.Module
+12.HTML in Node.js
+13.Date_Time
+14.Append File
+15.Delete File:unlink
+16.Open File:open
+17.Read File:readFile
+18.Rename File:rename
+
+---------------------------------------------
+ExpressJs:
+
+1.Hello Express
+2.mustache-test
+3.random-integer
+
+
+----------------------------------------------
+JavaScript:
+
+1.Fibonacci number
+2.Decimal to Binary
+3.Sort
+4.Search
+5.Swap numbers
+6.Array = House
+7.String = Find character position
+8.Chained Callback
+9.Pomise
+10.Recursion
+11.Class
+12.Method
+13.Create Object, Object Literals
+14.Fibonacci
+15.Prime
+16.Stack
+17.Check whether any two numbers in an array sums to a given number
+18.arrayCounter
+19.bubbleSort
+20.common divisor
+21.common character
+22.consecutive
+23.greatest product of 3
+24.insersion sort
+25.merge sort
+26.missing number
+27.find non-repeating character
+28.palindrom
+29.permutation
+30.quick sort
+31.random
+32.Remove duplicate data from array
+33.Remove duplicate character 
+34.Reverse
+35.Selection sort
+36.Find sub string from a string
+37.Sum two elements
+38.count number of zero from character
+39.apply
+40.clouser
+41.switch condition
+42.data types
+43.dynamic scope, nested scope
+44.grammer
+45.hosting
+46.iife
+47.let
+48.lexical scope
+49.modules
+50.convert a string objcet to an array
+51.filter
+52.shallow cloning
+53.spread
+54.bind
+55.callback interval
+56.context
+57.current date_time
+58.currying
+59.getter and setter
+60.hoc
+61.reduce
+62.stratgy
+63.switch
+64.time_zone
+65.get and set object
+66.digit pattern
+67.pattern
+68.oops
+(i).dynamic method
+(ii).encapsulation
+(iii).inheritance
+
+69.arrow,for in,Rest operator
+70.map
+71.sets
+72.add
+73.downword pyramid
+74.find a charecter
+75.Keys
+76.life cycle
+77.list max
+78.list
+79.prop-types
+80.transition group
+81.outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5
+
+
+
+
+
+
+
+
+

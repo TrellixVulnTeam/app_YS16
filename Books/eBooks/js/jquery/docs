@@ -1,0 +1,195 @@
+1.$(document).ready(function(){
+	$("p").click(function(){
+	$(this).hide();
+	});
+});
+
+2.<script>
+		$(document).ready(function(){
+			$(".hide").click(function(){
+				$("p").hide();
+			});
+
+		$(".show").click(function(){
+			$("p").show();
+		});
+		});
+	</script>
+	<body>
+		<p>good to implement jquery</p>
+		<button class="hide">hide</button>
+		<button class="show">show</button>
+</body>
+
+3.fadeIn
+	$(document).ready(function(){
+			$("button").click(function(){
+				$(".p").fadeIn()
+				$(".p2").fadeIn("slow");
+				$(".p3").fadeIn(3000);
+
+<div class="p2" style="width:80px;height:80px;display:none;background-color:red;">show</div>
+
+-fadeOut()
+	<div class="p2" style="width:80px;height:80px;background-color:red;">show</div>
+
+-fadeToggle()
+	style="width:80px;height:80px;background-color:red;
+
+-fadeTo()
+	$("button").click(function(){
+				$(".p").fadeTo("slow",0.12)
+				$(".p2").fadeTo("slow",0.22);
+				$(".p3").fadeTo("slow",0.11);
+			});
+	style="width:80px;height:80px;background-color:red;
+
+4.slideDown
+	<script>
+		$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+	</script>
+	<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+     <body>
+     	<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+
+--slideToggle
+      $("#panel").slideToggle("slow");
+
+-slideUp
+	 $("#flip").click(function(){
+        $("#panel").slideUp("slow");
+    });
+
+    #panel {
+    padding: 50px;
+}
+
+5.Animation
+	$("button").click(function(){
+        $("#panel").animate({left: '250px'});
+    });
+
+<button>wow</button>
+    <div id="panel" style="width:80px;height:80px;position:absolute">Animation</div>
+
+6.stop
+   $("#flip").click(function(){
+        $("#panel").slideDown(5000);
+    });
+    $("#stop").click(function(){
+        $("#panel").stop();
+    });
+
+    <style>same</style>
+
+    	<button id="stop">Stop sliding</button>
+		<div id="flip">Slide down panel</div>
+		<div id="panel">Hello world!</div>
+	
+8.Callback 
+	$(document).ready(function(){
+    $("button").click(function(){
+    $("p").hide("slow", function(){
+            alert("The paragraph is now hidden");
+    });
+	});
+	});
+
+9.Chaining
+    $("button").click(function(){
+        $("#p1").css("color", "red")
+            .slideUp(2000)
+            .slideDown(2000);
+    });
+
+    <button>Hide</button>
+	<p id="p1">Click me</p>
+
+
+jQuery HTML
+10.get
+	 $("button").click(function(){
+        alert("Value: " + $("#test").val());
+    });
+  <p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+  <button>Show Value</button>
+
+12.set
+	 $("#w3s").attr("href", function(i, origValue){
+            return origValue + "/jquery/"; 
+        });
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<button>Change href Value</button>
+<p>Mouse over</p>
+
+13.add
+ -append
+ 	$("#btn1").click(function(){
+        $("p").append(" <b>Appended text</b>.");
+    });
+
+ <button id="btn1">add</button>
+<p>This is a paragraph.</p>
+
+-prepend
+	$("p").prepend(" <b>Appended text</b>.");
+remain same
+
+-After, Before
+    $("#btn1").click(function(){
+        $("p").before("<b>Before</b>");
+    });
+
+    $("#btn2").click(function(){
+        $("p").after("<i>After</i>");
+    });
+
+ <p>oops</p>
+ <button id="btn1">Insert before</button>
+<button id="btn2">Insert after</button>
+
+14.remove, empty
+	$("button").click(function(){
+        $("#div1").empty();
+    });
+
+15.Load
+	$("button").click(function(){
+    $("#div1").load("demo_test.txt");
+    });
+    <div id="div1">oops</div>
+<button>Insert after</button>
+
+16.get
+	$("button").click(function(){
+        $.get("demo_test.asp", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+
+ 17.post
+ 	$.post("demo_test_post.asp",
+        {
+          name: "Donald Duck",
+          city: "Duckburg"
+        },
+        function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });

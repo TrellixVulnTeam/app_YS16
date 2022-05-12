@@ -1,0 +1,80 @@
+1.<iframe src="URL"></iframe>       //iframe is used to display a web page within a web page.
+
+
+2.<select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+
+3.Tag	Description
+      <article>	Defines an article in a document
+      <aside>	Defines content aside from the page content
+      <bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it
+      <details>	Defines additional details that the user can view or hide
+      <dialog>	Defines a dialog box or window
+      <figcaption>	Defines a caption for a <figure> element
+      <figure>	Defines self-contained content
+      <footer>	Defines a footer for a document or section
+      <header>	Defines a header for a document or section
+      <main>	Defines the main content of a document
+      <mark>	Defines marked/highlighted text
+      <menuitem> 	Defines a command/menu item that the user can invoke from a popup menu
+      <meter>	Defines a scalar measurement within a known range (a gauge)
+      <nav>	Defines navigation links
+      <progress>	Represents the progress of a task
+      <rp>	Defines what to show in browsers that do not support ruby annotations
+      <rt>	Defines an explanation/pronunciation of characters (for East Asian typography)
+      <ruby>	Defines a ruby annotation (for East Asian typography)
+      <section>	Defines a section in a document
+      <summary>	Defines a visible heading for a <details> element
+      <time>	Defines a date/time
+      <wbr>	Defines a possible line-break
+
+
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+
+      <canvas id="canvasuses" width="180" height="90">
+        <p>Your browser does not support the HTML5 canvas element.</p>
+      </canvas>
+
+
+4.<input list="country">
+     <datalist id="country">
+     <option value="India">
+     <option value="Australia">
+     <option value="Sourth Africa">
+     <option value="Canada">
+     <option value="America">
+     </datalist>
+ <input type="submit" value="submit"/>
+
+    <meter value="4" min="0" max="10">4 out of 10</meter>
+    <progress value="60" max="100"></progress>
+    <label for="rating">range input type</label>
+    <input type="password" id="password" name="password" required
+    title="(at least 6 characters, no spaces)" pattern="\S{6,}">
+
+
+5.DATALIST Element is basically use for auto completion of the form.
+The NAV Element is basically used for referral and related page.
+The RUBY Element is used to properly rendering the East Asians languages.The RUBY Element is used to display the text 
+on the head of the base text,and auto renderise the base text.
+
+There are mainly three attributes can be called with RUBY Element. rt (ruby text), rp (ruby parenthesis) 
+and rb (ruby base).
+
+get all the form controls with the placeholder attribute.
+The number type (type="number") provides an input for entering a number. Usually, this is a spinner box, where you 
+can either enter a number, or click on the up/down arrows in a native browser spinner UI to select a number.
+
+The range input type (type="range") displays a slider control.
+The placeholder attribute is used for a short hint for specific input field.
+
+
