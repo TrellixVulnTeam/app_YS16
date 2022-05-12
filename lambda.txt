@@ -1,0 +1,38 @@
+def sum(a,b):
+    c=a+b
+    return c
+obj=sum(2,3)
+print(obj)
+
+
+#2
+f=lambda a,b:a+b
+obj=f(2,3)
+print(obj)
+
+
+#3
+f=lambda n: 1 if n==0 else n+f(n-1)
+print(f(5))
+
+
+#4 Decorator
+def decor_result(result_function):
+    def distinction(marks):
+        for m in marks:
+            if m>=75:
+                print("Distinction")
+        result_function(marks)
+    return distinction
+
+@decor_result
+def result(marks):
+    for m in marks:
+        if m>=33:
+            pass
+        else:
+            print('FAIL')
+            break
+    else:
+        print('PASS')
+result([45,67,87,65,78])

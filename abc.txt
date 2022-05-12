@@ -1,0 +1,16 @@
+# Python default don't support abstract class. But with abc module can do.
+# Abstract class has at least one abstract method.
+
+from abc import ABC, abstractmethod
+
+class Computer(ABC):
+    @abstractmethod
+    def process(self):
+        pass
+
+class Laptop(Computer):
+    def process(self):
+        print("It's running")
+
+obj=Laptop()
+obj.process()

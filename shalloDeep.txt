@@ -1,0 +1,10 @@
+# copy
+
+
+
+
+
+
+#
+
+#in 1D shallow copy===deep copy

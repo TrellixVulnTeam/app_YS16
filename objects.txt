@@ -1,0 +1,89 @@
+We can create one class object and many instance object. Class object has static member varriables.
+
+class Test:
+    x=10                        //static member varriable
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def show(self):
+        print(self.a, self.b)
+
+print(Test.x)                   //Static object
+obj = Test(3,4)                 //Instance object, After creating ins obj, Automatically call __init__
+obj.show()
+
+
+
+# Difference between sorted and sort function
+
+l1=[4,3,5,6,8,0,1,2]
+s_l1=sorted(l1) #alwase return list even pass tuples or string
+print(s_l1)
+print(type(s_l1))
+
+
+#2
+l1=(4,3,5,6,8,0,1,2)  #tuples
+s_l1=sorted(l1) 
+print(s_l1)
+print(type(s_l1))
+
+
+#3
+l1=[4,3,5,6,8,0,1,2]
+s_l1=l1.sort()          #sort function alwase apply on list and return None
+print(l1)               #Sort function do changes on original list
+print(s_l1)
+print(type(s_l1))
+
+
+#4 How memory managed in Python
+Stack Memory : have refrences
+Private Heap Space : have Id of declared values, Objects stored here. We can't directly access it.
+
+
+#5 How to create static member variables in class
+Pythone don't have static keyword.
+Static variable get mempry inside class objects.
+
+class Items:
+    a=10                        # Static member variables
+    def __init__(self):
+        self.a=1                # InStance member variable
+        y=4                     # Local variable
+        Items.b=6               # Static variable
+
+    @staticmethod
+    def f2():
+        Items.d=8                   #Static variable
+
+    @classmethod
+    def f3(cls):
+        cls.e=1                     #Static variable
+        Items.f=10                  #Static variable
+
+Items.g=11                          #Static variable
+
+
+
+# Lacal variable versus Global variable
+x=5
+def f1():
+    global x
+    y=10
+    print("x=%d y=%d" %(x,y))
+
+f1()
+print(x,y)
+
+
+#3
+x=5
+def f1():
+    x=4                  #local variable
+    d=globals()
+    d['x']=10            #Global variable
+    print("x=%d x=%d" %(x, d['x']))
+
+f1()
+print(x) 

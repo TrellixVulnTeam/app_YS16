@@ -1,0 +1,31 @@
+print(bin(25))
+print(oct(0b11001))
+print(hex(0b11001))
+print(int('052', 8))
+
+
+#2
+import math as m
+x=math.sqrt(25)
+print(x)
+
+
+#3
+import math
+x=math.sqrt(15)
+print(math.floor(x))
+print(math.ceil(x))
+
+
+#4
+import math
+
+print(3**2)
+print(math.pow(3,2))
+print(math.pi)
+
+
+#2
+from math import sqrt, pow
+
+print(pow(4,5))

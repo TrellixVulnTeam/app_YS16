@@ -1,0 +1,24 @@
+Comples numbers are especially used in electronics, optics and quantum theory for describing waves and periodic phenomena.
+
+Fouries transform uses complex numbers.
+Audio signal processing in machine learnig
+Speech recognition system
+
+A complex number has real and imaginary part components.
+a + bj
+
+a and b are any type of numbers.
+
+num=2+3j
+print(type(num))
+
+
+Accesing real part: var.real
+Accesing imaginary part: var.imag
+
+
+Used to convert number or string to complex number
+Syntex: complex(real, imaginary)
+
+Both are optional parameters. default values are 0.
+Parameters can be of any type: int, float, str

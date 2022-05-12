@@ -1,0 +1,18 @@
+# Python have two types arguments: positional and keyword.
+#positional argument
+def f1(a,b):
+    print("a=",a,"b=",b)
+f1(1,2)
+
+
+#keyword argument
+def f1(a,b):
+    print("a=",a,"b=",b)
+f1(b=1,a=2)
+
+# If assign keyword than not able to assign positional argument.
+
+
+#What are negative indexes.
+l1=[10,20,30,40,50]
+print(l1[-1])

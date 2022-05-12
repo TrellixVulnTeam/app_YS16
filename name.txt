@@ -1,0 +1,44 @@
+print(__name__)
+
+
+#2
+#cals.py
+print("Hi", __name__)
+
+#main.py
+import cals;
+print(__name__)
+
+
+
+#3
+class A:
+    def __init__(self):
+        print("In init")
+
+A()
+
+
+#4
+class A:
+    def __init__(self, a):
+        print("In init",a)
+
+A(3)
+
+
+#5
+class A:
+    def __init__(self, a):
+        self.a2=a
+        print("In init",self.a2)
+
+A(3)
+
+
+#6 Get address of the memory
+class A:
+    pass
+
+obj=A()
+print(id(obj))
