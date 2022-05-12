@@ -1,0 +1,42 @@
+1. For Users Register (POST): localhost:5000/api/users
+than in Headers KEY="Content-Type", VALUE="application/json"
+in body => row 
+      {
+          "name":"admin",
+          "email":"admin7@gmail.com",
+          "password":"1234"
+      }
+
+
+2. For Login (POST): localhost:5000/api/auth
+      {
+          "email":"admin7@gmail.com",
+          "password":"1234"
+      }
+
+
+3. Check user (GET): localhost:5000/api/auth/user
+ Headers in KEY="Content-Type", VALUE="application/json"
+            KEY="x-auth-token", VALUE="token"
+            
+            
+4. For Items (POST): localhost:5000/api/items
+Headers in KEY="Content-Type", VALUE="application/json"
+in body => row 
+      {
+          "name":"admin"
+      }
+
+ than "msg": "No token, authorization denied"
+ 
+ 
+ we pass token as
+ Headers in KEY="Content-Type", VALUE="application/json"
+            KEY="x-auth-token", VALUE="token"
+in body => row 
+      {
+          "name":"admin"
+      }
+
+
+

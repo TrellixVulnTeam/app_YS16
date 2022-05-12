@@ -1,0 +1,9 @@
+CREATE TABLE orders (
+    `id` BIGINT UNSIGNED AUTO_INCREMENT,
+    items varchar(255) NOT NULL,
+    price varchar(255) NOT NULL,
+    qty varchar(255) NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+);

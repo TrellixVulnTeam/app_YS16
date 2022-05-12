@@ -1,0 +1,15 @@
+PUT: localhost:5000/class/617c7fceb6686c30308e8a43(class id)
+{
+  "studentsId":"617c3e3d2a240a0a31b6e563"(student id)
+}
+
+
+Nested Documents:
+{
+    "email":"valid3@gmail.com",
+    "username":"min3",
+    "password":"password3",
+    "messages":[
+        {"userId":"valid3@gmail.com", "text":"Object inside Onject"}
+        ]
+}

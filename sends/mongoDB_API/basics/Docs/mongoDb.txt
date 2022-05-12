@@ -1,0 +1,83 @@
+MongoDB
+
+NoSQL Database - Document Database Type in NoSQL
+Data is stored in json like syntax
+
+Good to use when there is no ton of inter connected relations
+
+Database, Collections, Document
+
+data/db folder inside MongoDB
+
+Run mongod and mongo in another terminal
+$ mongod -directoryperdb --dbpath C:\mongodb\data\db --logpath C:\monodb\log\mongo.log --logappend --rest --install
+$ net start MongoDB
+
+1.create_db: 
+
+2.create_collection: dbo.createCollection("customers", (err, res) => {
+
+3.delete_documents: dbo.collection("customers").deleteOne(myquery, (err, obj) => {
+
+4.delete_many: dbo.collection("customers").deleteMany(myquery, (err, obj) => {
+
+
+5.delete_particular_collection: dbo.dropCollection("customers", (err, delOK) => {
+
+6.drop_collections: dbo.collection("customers").drop((err, delOK) => {
+
+7.filter_with_regular_expression:  dbo.collection("customers").find(query).toArray((err, result) => {
+
+8.filter:  dbo.collection("customers").find(query).toArray((err, result) => {
+
+9.find_all: dbo.collection("customers").find({}).toArray((err, result) => {
+
+10.find_one: dbo.collection("customers").findOne({}, (err, result) => {
+    
+11.find_some: dbo.collection("customers").find({}, { projection: { _id: 0, name: 1, address: 1 } })
+        .toArray((err, result) => {
+
+12.insert_multiple: dbo.collection("customers").insertMany(myobj, (err, res) => {
+
+13.insert_one_into_collection: dbo.collection("customers").insertOne(myobj, (err, res) => {
+
+14.sort_decending: dbo.collection("customers").find().sort(mysort).toArray((err, result) => {
+
+15.sort: dbo.collection("customers").find().sort(mysort).toArray((err, result) => {
+
+1,show dbs
+1.1,use db_name
+1.2,db.createUser({ user: "", pwd: "", roles: [ "readwrite", "dbAdmin" ] });
+
+2,show collections
+2.1,db.createCollection('<collection_name>');
+2.2,db.<collection_name>.insert({ });
+2.3,db.<collection_name>.insert([ { }, { }, { } ]);
+
+3,db.<collection_name>.find();
+3.1db.<collection_name>.find().pretty();
+3.2,db.<collection_name>.find().count();
+3.3,db.<collection_name>.find().limit(4);
+
+4,db.<collection_name>.findById(id);
+4.1db.<collection_name>.find(<matchObject>);
+4.2db.<collection_name>.find({ "nestedObj.field": "" });
+
+5,db.<collection_name>.find({ $or: [ <matchObject1>, <matchObject2> ] });
+5.1,db.<collection_name>.find({ age: { $gt: 40 }}); 					// gt or gte
+5.2,db.<collection_name>.find({ age: { $lt: 40 }}); 					// lt or lte
+5.3,db.<collection_name>.find().sort({ field: 1 }); 					// ascending order is indicated by 1
+
+6, db.<collection_name>.update(<matchObject>, {}); 					// matchObject: { first_name: '' } 
+6.1,db.<collection_name>.update(<matchObject>, {}, { upsert: true }); 			// insert if not found
+
+7,db.<collection_name>.update(<matchObject>, { $set: { } }); 				// Preserves rest of the data in the Document
+7.1,db.<collection_name>.update(<matchObject>, { $inc: { age: 5 } } ); 			// increments age by 5
+7.2,db.<collection_name>.update(<matchObject>, { $unset: { age: 1 } } ); 		// deletes age field
+7.3,db.<collection_name>.update(<matchObject>, { $rename: { "field1": "field2" }});
+
+8,db.<collection_name>.remove(<matchObject>);
+8.1,db.<collection_name>.remove(<matchObject>, { justOne: true });
+8.2,db.<collection_name>.find().forEach(function(doc) {
+    print("Customer Name": + doc.field);
+  });

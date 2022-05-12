@@ -1,0 +1,22 @@
+create table employees(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name varchar(32),
+    last_name varchar(32),
+    email varchar(64),
+    phone int(64),
+    organization varchar(64),
+    designation varchar(64),
+    salary int(64),
+    status boolean,
+    created_at DATETIME NOT NULL,
+    updated_at Date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    )
+
+
+
+
+
+SELECT * FROM employees 
+LEFT JOIN employees ON orders.id = employees.id
+LEFT JOIN orders ON employees.id = orders.id
+LEFT JOIN orders ON employees.id = orders.id

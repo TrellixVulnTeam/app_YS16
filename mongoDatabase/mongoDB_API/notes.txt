@@ -1,0 +1,71 @@
+show dbs
+use dbName
+db                   //View current Database
+db.dropDatabase()     //Delete Database 
+
+2. Collection Commands
+show collections
+db.createCollection('comments')
+db.comments.drop()
+db.comments.find()
+db.comments.find().pretty()
+db.comments.findOne({name: 'Harry'})
+
+db.comments.insert({
+    'name': 'Harry',
+    'lang': 'JavaScript',
+    'member_since': 5
+ })
+ 
+ 
+ db.comments.insertMany([{
+    'name': 'Harry',
+    'lang': 'JavaScript',
+    'member_since': 5
+    }, 
+    {'name': 'Rohan',
+    'lang': 'Python',
+    'member_since': 3
+    },
+    {'name': 'Lovish',
+    'lang': 'Java',
+    'member_since': 4
+}])
+
+
+
+db.comments.find({lang:'Python'})                       //Search in a MongoDb Database
+db.comments.find().limit(2)
+db.comments.find().count()                      //Count the number of rows
+
+
+db.comments.update({name: 'Shubham'},
+{'name': 'Harry',
+    'lang': 'JavaScript',
+    'member_since': 51
+}, {upsert: true})
+
+
+ //Mongodb Increment Operator
+db.comments.update({name: 'Rohan'},
+{$inc:{
+    member_since: 2
+}})                                     
+
+
+
+//Mongodb Rename Operator
+db.comments.update({name: 'Rohan'},
+{$rename:{
+    member_since: 'member'
+}})
+
+
+db.comments.remove({name: 'Harry'})                     //Delete Row
+
+db.comments.find({member_since: {$lt: 90}})
+db.comments.find({member_since: {$lte: 90}})
+db.comments.find({member_since: {$gt: 90}})
+db.comments.find({member_since: {$gte: 90}})
+
+
